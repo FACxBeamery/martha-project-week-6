@@ -1,0 +1,19 @@
+{
+  "name": "martha-project-week-6",
+  "version": "1.0.0",
+  "description": "Martha Lambert week 6 react game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACxBeamery/martha-project-week-6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACxBeamery/martha-project-week-6/issues"
+  },
+  "homepage": "https://github.com/FACxBeamery/martha-project-week-6#readme"
+}
