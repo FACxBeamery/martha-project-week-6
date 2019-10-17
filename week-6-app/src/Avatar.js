@@ -36,9 +36,9 @@ const Avatar = ({
 
 	useEffect(() => {
 		const newGameProgress = [
-			eyes == answer[0],
-			nose == answer[1],
-			mouth == answer[2]
+			eyes === answer[0],
+			nose === answer[1],
+			mouth === answer[2]
 		];
 		console.log("answer=", answer);
 		console.log("eyes", eyes, "eyes answer", answer[0]);
@@ -52,40 +52,34 @@ const Avatar = ({
 			<div className={styles["buttons-div"]}>
 				<button
 					name="eyesLeft"
-					className={
-						gameProgress[0]
-							? styles["hidden-button"]
-							: styles["arrow-left"]
-					}
+					className={styles["arrow-left"]}
 					onClick={(event) =>
 						handleLeftClick(event, eyes, setEyes, eyesNumbers)
 					}
 					disabled={gameProgress[0]}
-				/>
+				>
+					{gameProgress[0] ? "✅" : "👀 ⬅"}
+				</button>
 				<button
 					name="noseLeft"
-					className={
-						gameProgress[1]
-							? styles["hidden-button"]
-							: styles["arrow-left"]
-					}
+					className={styles["arrow-left"]}
 					onClick={(event) =>
 						handleLeftClick(event, nose, setNose, noseNumbers)
 					}
 					disabled={gameProgress[1]}
-				/>
+				>
+					{gameProgress[1] ? "✅" : "👃 ⬅"}
+				</button>
 				<button
 					name="mouthLeft"
-					className={
-						gameProgress[2]
-							? styles["hidden-button"]
-							: styles["arrow-left"]
-					}
+					className={styles["arrow-left"]}
 					onClick={(event) =>
 						handleLeftClick(event, mouth, setMouth, mouthNumbers)
 					}
-					disabled={gameProgress[0]}
-				/>
+					disabled={gameProgress[2]}
+				>
+					{gameProgress[2] ? "✅" : "👄 ⬅"}
+				</button>
 			</div>
 			<AvatarImage
 				eyes={eyes}
@@ -96,40 +90,34 @@ const Avatar = ({
 			<div className={styles["buttons-div"]}>
 				<button
 					name="eyesRight"
-					className={
-						gameProgress[0]
-							? styles["hidden-button"]
-							: styles["arrow-right"]
-					}
+					className={styles["arrow-right"]}
 					onClick={(event) =>
 						handleRightClick(event, eyes, setEyes, eyesNumbers)
 					}
 					disabled={gameProgress[0]}
-				/>
+				>
+					{gameProgress[0] ? "✅" : "➡ 👀"}
+				</button>
 				<button
 					name="noseRight"
-					className={
-						gameProgress[1]
-							? styles["hidden-button"]
-							: styles["arrow-right"]
-					}
+					className={styles["arrow-right"]}
 					onClick={(event) =>
 						handleRightClick(event, nose, setNose, noseNumbers)
 					}
 					disabled={gameProgress[1]}
-				/>
+				>
+					{gameProgress[1] ? "✅" : "➡ 👃"}
+				</button>
 				<button
 					name="mouthRight"
-					className={
-						gameProgress[2]
-							? styles["hidden-button"]
-							: styles["arrow-right"]
-					}
+					className={styles["arrow-right"]}
 					onClick={(event) =>
 						handleRightClick(event, mouth, setMouth, mouthNumbers)
 					}
 					disabled={gameProgress[2]}
-				/>
+				>
+					{gameProgress[2] ? "✅" : "➡ 👄"}
+				</button>
 			</div>
 		</form>
 	);

@@ -3,7 +3,7 @@ import styles from "./App.module.css";
 import NameForm from "./NameForm";
 import Avatar from "./Avatar";
 import GithubImage from "./GithubImage";
-
+import Instructions from "./Instructions";
 function App() {
 	const [githubUser, setGithubUser] = useState("thomas-galligan");
 	const [eyes, setEyes] = useState(3);
@@ -17,8 +17,12 @@ function App() {
 	const [answer, setAnswer] = useState([6, 5, 3]);
 	return (
 		<div className={styles["root"]}>
-			<h1>Create your avatar!</h1>
+			<h1>Find your lookalike avatar!</h1>
+
 			<NameForm githubUser={githubUser} setGithubUser={setGithubUser} />
+
+			<Instructions gameProgress={gameProgress} />
+
 			<Avatar
 				eyes={eyes}
 				setEyes={setEyes}

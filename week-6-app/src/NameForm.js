@@ -4,7 +4,7 @@ const NameForm = ({ githubUser, setGithubUser }) => {
 	return (
 		<form className={styles["text-input"]}>
 			<label htmlFor="githubUser" className={styles["form-label"]}>
-				Please enter your github username!
+				Please enter your github username:
 			</label>
 			<input
 				type="text"
