@@ -1,12 +1,14 @@
 import React from "react";
 import getGithubPicture from "./utils/getGithubPicture";
 import styles from "./GithubImage.module.css";
-const GithubImage = ({ githubUser, githubUrl, setGithubUrl }) => {
+import newRandomAnswer from "./utils/newRandomAnswer";
+const GithubImage = ({ githubUser, githubUrl, setGithubUrl, setAnswer }) => {
 	React.useEffect(() => {
 		getGithubPicture(`https://api.github.com/users/${githubUser}`)
 			.then((data) => {
 				if (data) {
 					setGithubUrl(data.avatar_url);
+					setAnswer(newRandomAnswer());
 				} else {
 					setGithubUrl(
 						"https://avatars0.githubusercontent.com/u/36141893?v=4"
