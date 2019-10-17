@@ -1,0 +1,30 @@
+.arrow-right {
+	margin-top: 2vh;
+	margin-left: 1vh;
+	width: 0;
+	height: 0;
+	border-top: 5vh solid transparent;
+	border-bottom: 5vh solid transparent;
+	border-left: 5vh solid rgb(255, 174, 255);
+}
+
+.arrow-left {
+	margin-top: 2vh;
+	margin-right: 1vh;
+	width: 0;
+	height: 0;
+	border-top: 5vh solid transparent;
+	border-bottom: 5vh solid transparent;
+	border-right: 5vh solid rgb(255, 174, 255);
+}
+
+.buttons-div {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-div {
+	display: flex;
+	height: 40vh;
+	margin-bottom: 5vh;
+}

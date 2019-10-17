@@ -1,0 +1,9 @@
+.text-input {
+	margin-bottom: 5vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	margin-bottom: 1vh;
+}
