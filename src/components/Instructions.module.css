@@ -1,0 +1,11 @@
+.instruction-text {
+	text-align: center;
+	background-color: #ff9b75;
+	padding: 1rem;
+}
+
+.success-text {
+	text-align: center;
+	background-color: #84efa9;
+	padding: 1rem;
+}

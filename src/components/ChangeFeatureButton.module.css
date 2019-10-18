@@ -1,0 +1,25 @@
+.arrow-right {
+	margin-left: 1vh;
+	font-size: 4rem;
+	border: none;
+	background: none;
+}
+
+.arrow-left {
+	margin-right: 1vh;
+	font-size: 4rem;
+	border: none;
+	background: none;
+}
+
+button:disabled {
+	color: black;
+}
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

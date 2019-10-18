@@ -1,0 +1,35 @@
+.text-input {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-label {
+	margin-bottom: 1vh;
+	font-style: italic;
+}
+
+.username-form {
+	display: flex;
+	align-items: flex-end;
+}
+
+.button {
+	margin-left: 1rem;
+	border: none;
+	background-color: #61ceff;
+	font-size: 0.75rem;
+	font-weight: bold;
+	border-radius: 10%;
+	height: 1.25rem;
+}
+
+.invalid-input {
+	border: red solid 0.5rem;
+	border-bottom: 0rem;
+}
+
+.invalid-input-text {
+	background-color: red;
+	color: white;
+	font-weight: 700;
+}
