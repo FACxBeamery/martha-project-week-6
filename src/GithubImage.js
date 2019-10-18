@@ -16,12 +16,18 @@ const GithubImage = ({ githubUser, githubUrl, setGithubUrl, setAnswer }) => {
 				}
 			})
 			.catch(console.log("can't find this user!"));
-	}, [githubUser]);
+	}, [githubUser, setAnswer, setGithubUrl]);
 
 	if (!githubUrl) {
 		return <h3>...Loading</h3>;
 	}
-	return <img src={githubUrl} className={styles["githubImage"]} />;
+	return (
+		<img
+			src={githubUrl}
+			alt="Github user"
+			className={styles["githubImage"]}
+		/>
+	);
 };
 
 export default GithubImage;

@@ -24,7 +24,7 @@ const Avatar = ({
 			mouth === answer[2]
 		];
 		setGameProgress(newGameProgress);
-	}, [eyes, nose, mouth, answer]);
+	}, [eyes, nose, mouth, answer, setGameProgress]);
 
 	const eyesNumbers = [1, 2, 3, 4, 5, 6, 7, 9, 10];
 	const noseNumbers = [2, 3, 4, 5, 6, 7, 8, 9];
