@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./App.module.css";
-import NameForm from "./NameForm";
-import Avatar from "./Avatar";
-import GithubImage from "./GithubImage";
-import Instructions from "./Instructions";
-import CircleColourPicker from "./CircleColourPicker";
+import NameForm from "./components/NameForm";
+import Avatar from "./components/Avatar";
+import GithubImage from "./components/GithubImage";
+import Instructions from "./components/Instructions";
+import CircleColourPicker from "./components/CircleColourPicker";
 function App() {
 	const [githubUser, setGithubUser] = useState("thomas-galligan");
 	const [eyes, setEyes] = useState(3);
