@@ -1,9 +1,0 @@
-.buttons-div {
-	display: flex;
-	flex-direction: column;
-}
-
-.form-div {
-	display: flex;
-	height: 40vh;
-}
