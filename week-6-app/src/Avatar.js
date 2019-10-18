@@ -35,6 +35,7 @@ const Avatar = ({
 	};
 
 	useEffect(() => {
+		setTimeout(500);
 		const newGameProgress = [
 			eyes === answer[0],
 			nose === answer[1],
@@ -45,7 +46,7 @@ const Avatar = ({
 		console.log("nose", nose, "nose answer", answer[1]);
 		console.log("mouth", mouth, "mouth answer", answer[2]);
 		setGameProgress(newGameProgress);
-	}, [eyes, nose, mouth]);
+	}, [eyes, nose, mouth, answer]);
 
 	return (
 		<form className={styles["form-div"]}>
@@ -85,7 +86,7 @@ const Avatar = ({
 				eyes={eyes}
 				nose={nose}
 				mouth={mouth}
-				colour="3e8893"
+				colour={colour.substring(1)}
 			/>
 			<div className={styles["buttons-div"]}>
 				<button
