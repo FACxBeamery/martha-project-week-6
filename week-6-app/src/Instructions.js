@@ -3,8 +3,8 @@ import styles from "./Instructions.module.css";
 const Instructions = ({ gameProgress }) => {
 	return gameProgress.every(Boolean) ? (
 		<h2 className={styles["success-text"]}>
-			{" "}
-			Well done! I can barely tell the difference{" "}
+			Well done! I can barely tell the difference <br />
+			Enter another username to try again.
 		</h2>
 	) : (
 		<h2 className={styles["instruction-text"]}>
