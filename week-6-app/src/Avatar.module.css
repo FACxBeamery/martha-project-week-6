@@ -1,15 +1,13 @@
 .arrow-right {
-	margin-top: 2vh;
 	margin-left: 1vh;
-	font-size: 5rem;
+	font-size: 4rem;
 	border: none;
 	background: none;
 }
 
 .arrow-left {
-	margin-top: 2vh;
 	margin-right: 1vh;
-	font-size: 5rem;
+	font-size: 4rem;
 	border: none;
 	background: none;
 }
@@ -22,7 +20,6 @@
 .form-div {
 	display: flex;
 	height: 40vh;
-	margin-bottom: 5vh;
 }
 
 button:disabled {
