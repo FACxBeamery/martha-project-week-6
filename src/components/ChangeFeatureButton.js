@@ -47,7 +47,11 @@ const ChangeFeatureButton = ({
 			>
 				{featureGameProgress
 					? "✅"
-					: `${featureEmoji} ${direction === "Left" ? "⬅" : "➡"}`}
+					: `${
+							direction === "Left"
+								? featureEmoji + " ⬅"
+								: "➡ " + featureEmoji
+					  }`}
 			</button>
 		</>
 	);
