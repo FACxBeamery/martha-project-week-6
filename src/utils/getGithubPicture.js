@@ -1,5 +1,5 @@
-import { token } from "../token";
-
+// import { token } from "../token";
+const token = process.env.REACT_APP_TOKEN;
 const checkResponse = (response) => {
 	if (response.status !== 200) {
 		console.log(`Error with the request! ${response.status}`);
